@@ -1,27 +1,27 @@
 # kotlin-pg
 
-Kotlin playground — изучение языка через unit-тесты.
+Kotlin playground — learning the language through unit tests.
 
-## Требования
+## Requirements
 
 - JDK 25+
 
-## Сборка и тесты
+## Build & Test
 
 ```bash
-./gradlew build     # компиляция + тесты
-./gradlew test      # только тесты
+./gradlew build     # compile + test
+./gradlew test      # tests only
 ```
 
-## Структура
+## Structure
 
 ```
 src/test/kotlin/by/duzh/pg/kotlin/
 ├── BasicTest.kt          # val/var, string templates, ranges, nullable
-├── ...                    # по классу на каждую фичу
+├── ...                    # one class per feature
 ```
 
-## Стек
+## Stack
 
 - Kotlin 2.1.10
 - JUnit 5 via `kotlin.test`
