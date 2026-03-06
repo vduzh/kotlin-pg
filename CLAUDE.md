@@ -18,5 +18,6 @@ Kotlin learning project — exploring language features through unit tests.
 ## Conventions
 
 - JDK 25, Kotlin 2.1.10
-- Test framework: JUnit 5 via `kotlin.test` + AssertJ
+- Test framework: JUnit 5 via `kotlin.test`
+- Assertions: AssertJ (preferred over kotlin.test assertions)
 - Tests are the primary way to explore Kotlin features

@@ -2,8 +2,6 @@ package by.duzh.pg.kotlin
 
 import org.assertj.core.api.Assertions.assertThat
 import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertTrue
 
 class BasicTest {
 
@@ -11,7 +9,7 @@ class BasicTest {
     fun `val is immutable`() {
         val name = "Kotlin"
         // name = "Java" // compilation error: Val cannot be reassigned
-        assertEquals("Kotlin", name)
+        assertThat(name).isEqualTo("Kotlin")
     }
 
     @Test
@@ -43,7 +41,7 @@ class BasicTest {
         val nullable: String? = null
         val nonNull: String = "hello"
 
-        assertTrue(nullable == null)
+        assertThat(nullable).isNull()
         assertThat(nonNull.length).isEqualTo(5)
         assertThat(nullable?.length).isNull()
     }
